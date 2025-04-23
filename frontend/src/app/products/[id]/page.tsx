@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { API_BASE_URL } from '@/config/api';
 import { toast } from 'react-hot-toast';
 import Link from 'next/link';
+import { getToken } from '@/lib/api';
 
 interface Product {
   _id: string;

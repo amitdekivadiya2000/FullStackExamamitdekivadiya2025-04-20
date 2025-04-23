@@ -45,7 +45,7 @@ const getStatusIcon = (status: string) => {
   }
 };
 
-export default function OrdersPage({ isAdmin: propIsAdmin }: OrdersPageProps) {
+export default function OrdersPage({ isAdmin: propIsAdmin }: any) {
   const router = useRouter();
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);

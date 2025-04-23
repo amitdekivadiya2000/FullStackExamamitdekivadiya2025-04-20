@@ -21,7 +21,7 @@ interface CartPageProps {
   isAdmin: boolean;
 }
 
-export default function CartPage({ isAdmin }: CartPageProps) {
+export default function CartPage({ isAdmin }: any) {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
