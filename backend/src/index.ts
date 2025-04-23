@@ -50,6 +50,10 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/reports', reportRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the E-commerce API!');
+})
+
 // Error handling middleware
 const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
   console.error(err.stack);
